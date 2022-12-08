@@ -1,3 +1,0 @@
-// Remove Duplicates From Array Of Objects
-
-exportFields = exportFields.filter((fD, index) => {return (exportFields.findIndex((eF) => eF.field === fD.field) === index)});
