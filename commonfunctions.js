@@ -57,3 +57,7 @@ const applyCustomOrder = (arr, sortBy, desiredOrder) => {
 myArray.sort(function(a, b) {
 return sortOrder.indexOf(a.name) - sortOrder.indexOf(b.name);});
 };
+
+var withNoDigits = questionText.replace(/[0-9]/g, '');
+
+questionText = questionText.replace(/\d+/g, '');
