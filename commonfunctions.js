@@ -61,3 +61,5 @@ return sortOrder.indexOf(a.name) - sortOrder.indexOf(b.name);});
 var withNoDigits = questionText.replace(/[0-9]/g, '');
 
 questionText = questionText.replace(/\d+/g, '');
+
+uniqueElements = array.filter((d, index) => index === array.indexOf(d))
