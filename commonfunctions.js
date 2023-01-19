@@ -63,3 +63,41 @@ var withNoDigits = questionText.replace(/[0-9]/g, '');
 questionText = questionText.replace(/\d+/g, '');
 
 uniqueElements = array.filter((d, index) => index === array.indexOf(d))
+
+
+let master = 
+        {
+            "NEMULA": "NECKLACE",
+            "NERACH": "NECKLACE"
+        };
+
+        let data = [
+            {
+                "ITEM_CODE": "190",
+                "ITEM_ID": "NERACH",
+                "CATEGORY": "II STUD",
+                "SUPPLIER": "KL",
+                "DESIGN": "MGL",
+                "PURITY": "916 HALLMARK",
+                "IS_TAG": "N"
+            },
+            {
+                "ITEM_CODE": "192",
+                "ITEM_ID": "ASLORE",
+                "CATEGORY": "ASSORTED",
+                "SUPPLIER": "LOCAL",
+                "DESIGN": "REGULAR",
+                "PURITY": "916 HALLMARK",
+                "IS_TAG": "N"
+            }
+        ]
+        let re = [];
+        data.forEach(data=>{
+            if (data.ITEM_ID) {
+                data.product_name = master[data.ITEM_ID] || '';
+            }
+        });
+
+
+
+
